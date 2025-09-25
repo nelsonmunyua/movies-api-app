@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <title>Movies App</title>
+  </head>
+  <body>
+    <nav class="nav nav-bar">
+      <img src="./images/movie-logo.jpg" class="logo-container" alt="" />
+
+      <div class="search-container">
+        <form id="search-form">
+          <input
+            type="text"
+            placeholder="Search..."
+            class="search-input"
+            id="search-input"
+          />
+          <i class="fa-solid fa-magnifying-glass search-icon"></i>
+        </form>
+        <!-- Dropdown container for search results -->
+        <div class="search-dropdown-results" id="search-dropdown-results"></div>
+      </div>
+      <ul class="nav-items">
+        <li>
+          <a href="#"> Home </a>
+        </li>
+        <li>
+          <a href="#"> Movies </a>
+        </li>
+        <li>
+          <a href="#"> TV Shows </a>
+        </li>
+        <li>
+          <a href="#"> Discover </a>
+        </li>
+      </ul>
+      <div id="signin">
+        <a href="#"> Sign In</a>
+      </div>
+    </nav>
+    <div class="hero">
+      <h2>Go ahead, stream free</h2>
+      <p>
+        You can watch over 20,000 free movies and shows, plus Live TV on almost
+        any device. What are you waiting for?
+      </p>
+      <div class="genre-category">
+        <h1>Browse By Genre ></h1>
+        <p>On Demand</p>
+        <ul class="genre-list"></ul>
+      </div>
+    </div>
+    <div class="movie-container">
+      <div class="movies-list"></div>
+    </div>
+
+    <!-- Movie Detail Modal -->
+<div id="movie-modal" class="modal-overlay">
+  <div class="modal-content">
+    <span class="modal-close">&times;</span>
+    <!-- Dynamic content will be injected here by JavaScript -->
+  </div>
+</div>
+    <script src="./main.js"></script>
+  </body>
+</html>
