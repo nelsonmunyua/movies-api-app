@@ -376,3 +376,23 @@ li a:hover {
   font-size: 12px;
   margin-top: 5px;
 }
+/* Styling for horizontally scrolling movie lists */
+.movie-list-horizontal {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  gap: 20px;
+  padding: 20px 0;
+  -webkit-overflow-scrolling: touch; /* For smoother scrolling on iOS */
+  scrollbar-width: none; /* Firefox */
+}
+
+/* Hide scrollbar for Webkit browsers (Chrome, Safari) */
+.movie-list-horizontal::-webkit-scrollbar {
+  display: none;
+}
+
+/* Add a class for sections if needed */
+.movie-category {
+  margin-top: 40px;
+}
